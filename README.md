@@ -31,6 +31,11 @@ A la http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#pa
 ### Tokenisation 
 A la http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenization
 
+Note : when we start reading the first line we should be able to detect that it's a header state
+
+
+header state
+
 Data State / Cell state
 Consume the next input character:
 > ↪ U+0009 CHARACTER TABULATION (tab) : switch to "TABULTED state"
