@@ -31,20 +31,20 @@ A la http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#pa
 ### Tokenisation 
 A la http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenization
 
-Data State
+Data State / Cell state
 Consume the next input character:
-> ↪ U+0009 CHARACTER TABULATION (tab)
+> ↪ U+0009 CHARACTER TABULATION (tab) : switch to "TABULTED state"
 
-> ↪ U+0022 QUOTATION MARK (")
+> ↪ U+002C COMMA : switch to "COMMA state"
 
-> ↪ U+0027 APOSTROPHE (')
+> ↪ U+003B SEMICOLON : switch to "SEMICOLON state"
 
-> ↪ CUC002C OMMA
+> ↪ U+0022 QUOTATION MARK (") : switch to "In Quotation state"
 
-> ↪ U+003B SEMICOLON
+> ↪ U+0027 APOSTROPHE (') : switch to "In APostrophe state"
 
-> ↪ EOF
+> ↪ EOF : switch to "close state"
 
-> ↪ Anything else
+> ↪ Anything else : push character in "data state"
 
  - 
