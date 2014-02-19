@@ -31,13 +31,20 @@ A la http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#pa
 ### Tokenisation 
 A la http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenization
 
-1. Data State
+Data State
 Consume the next input character:
- ↪ U+0009 CHARACTER TABULATION (tab)
- ↪ U+0022 QUOTATION MARK (")
- ↪ U+0027 APOSTROPHE (')
- ↪ COMMA
- ↪ SEMI-COLON
- - EOF
- - Anything else
+> ↪ U+0009 CHARACTER TABULATION (tab)
+
+> ↪ U+0022 QUOTATION MARK (")
+
+> ↪ U+0027 APOSTROPHE (')
+
+> ↪ CUC002C OMMA
+
+> ↪ U+003B SEMICOLON
+
+> ↪ EOF
+
+> ↪ Anything else
+
  - 
